@@ -1,1 +1,18 @@
 # CPE_SMS_Forword
+1.ssh终端敲  opkg update
+opkg install python3-pip
+pip install requests 回车，等待自动安装完环境
+
+2.我这边以bark推送加为例，修改bark.py 文件里面的token
+
+
+文件上传到root目录下
+
+ssh添加权限
+chmod 755 sms_tool
+
+ssh运行
+python bark.py &
+
+cpe添加开关机自动启动
+python /root/bark.py &
